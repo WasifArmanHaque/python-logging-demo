@@ -26,6 +26,7 @@ if __name__ == '__main__':
             print 'Not found.'
 
         logger.info('Search succesful.')
+    
     elif sys.argv[1] == '-sr':
         print('Enter list items, separated by a space: ')
         items = [int(x) for x in raw_input().split()]
@@ -33,5 +34,6 @@ if __name__ == '__main__':
         sas = dac.SearchAndSort(items)
         sas.merge_sort()
         logger.info('Sort succesful.')
+    
     else:
         logger.warning('Not a valid flag.')

@@ -1,2 +1,4 @@
-# python-logging-demo
-Implemented a search and sort algorithm to demonstrate python logging 
+# Python Logging Demo
+
+Implemented Search and Sort to demonstrate logging capabilities.
+

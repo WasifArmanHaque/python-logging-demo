@@ -1,5 +1,5 @@
 import sys, logging
-import DivideAndConquer as dac
+import divide_and_conquer as dac
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)

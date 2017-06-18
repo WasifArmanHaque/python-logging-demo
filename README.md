@@ -3,7 +3,7 @@
 Implemented Binary Search and Merge Sort algorithm in Python to demonstrate to make use of the Logging package.
 
 ### Requirements
-`python 2.7`
+python 2.7
 
 ### Description
 
@@ -17,7 +17,8 @@ Implemented Binary Search and Merge Sort algorithm in Python to demonstrate to m
 4. Run the `tester.py` file using : `python tester.py -se` or `python tester.py -sr`
 
 Notes: 
-Valid flags are `-se` (for search) and `-sr`(for sort)
-Running the `tester.py` will produce two log files namely `dac.log` and `test.log`.
+Valid flags are `-se` (for search) and `-sr`(for sort).
+
+Running the `tester.py` will produce wo log files namely `dac.log` and `test.log`.
 
 

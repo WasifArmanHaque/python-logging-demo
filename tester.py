@@ -1,4 +1,5 @@
-import sys, logging
+import sys, logging, yaml
+import logging.config
 import divide_and_conquer as dac
 
 with open('logging.yaml') as f:

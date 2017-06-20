@@ -1,5 +1,6 @@
 import logging
-import time
+import logging.config
+import time, yaml
 
 with open('logging.yaml') as f:
     conf = yaml.safe_load(f)

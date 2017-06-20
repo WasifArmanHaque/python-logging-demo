@@ -21,6 +21,6 @@ python 2.7
 Notes: 
 Valid flags are `-se` (for search) and `-sr`(for sort).
 
-Running the `tester.py` will produce wo log files namely `dac.log` and `test.log`.
+Running the `tester.py` will produce wo log files namely `dac.log` and `tester_info.log`.
 
 

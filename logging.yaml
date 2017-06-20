@@ -1,0 +1,29 @@
+formatters:
+    basic:
+        format: '%(asctime)s:%(name)s:%(message)s'
+
+handlers:
+    file1:
+        class : logging.FileHandler
+        formatter: basic
+        level: DEBUG
+        filename: tester_info.log
+
+    file2:
+        class : logging.FileHandler
+        formatter: basic
+        level: DEBUG
+        filename: dac.log
+
+loggers:
+    tester_logger:
+        level: DEBUG
+        handlers: [file1]
+
+    dac_logger:
+        level: DEBUG
+        handlers: [file2]
+
+root:
+    level: DEBUG
+    handlers: [file1]

@@ -1,13 +1,12 @@
 import logging
 import time
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
-file_handler = logging.FileHandler('dac.log')
-file_handler.setFormatter(formatter)
+with open('logging.yaml') as f:
+    conf = yaml.safe_load(f)
+    conf.setdefault('version', 1)
+    logging.config.dictConfig(conf)
+    logger = logging.getLogger('dac_logger')
 
-logger.addHandler(file_handler)
 
 class SearchAndSort(object):
     """ A Python class with implementing two Divide and Conquer algorithms - Binary Search and Merge Sort """

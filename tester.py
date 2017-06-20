@@ -1,13 +1,11 @@
 import sys, logging
 import divide_and_conquer as dac
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-
-formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
-file_handler = logging.FileHandler('test.log')
-file_handler.setFormatter(formatter)
-logger.addHandler(file_handler)
+with open('logging.yaml') as f:
+    conf = yaml.safe_load(f)
+    conf.setdefault('version', 1)
+    logging.config.dictConfig(conf)
+    logger = logging.getLogger('tester_logger')
 
 if __name__ == '__main__':
     if len(sys.argv) == 1 or sys.argv[1] == '-se' :
